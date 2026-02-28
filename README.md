@@ -165,18 +165,17 @@ Implements basic **safety logic and traffic analysis** to prioritize pedestrian-
 
 ## Features
 
-List the key features of your project:
-- Feature 1: [Description]
-- Feature 2: [Description]
-- Feature 3: [Description]
-- Feature 4: [Description]
+* Simulates a real traffic light system using Red, Yellow, and Green LEDs
+* Includes a pedestrian push button for safe road crossing
+* Automatically controls light sequence using Arduino programming
+* Simple and low-cost design suitable for beginners and academic projects
 
----
 
 ## Implementation
+The virtual stimulation was done on tinkercad and the components were asssembled . An app was designed to validate the same.
 
 ### For Software:
-
+Vibecoding , figma , claude ai
 #### Installation
 ```bash
 [Installation commands - e.g., npm install, pip install -r requirements.txt]
@@ -187,10 +186,11 @@ List the key features of your project:
 [Run commands - e.g., npm start, python app.py]
 ```
 
-### For Hardware:
+### For Hardware: 
+tinkercad for stimulation followed by assembling of the compponents.
 
 #### Components Required
-[List all components needed with specifications]
+
 
 #### Circuit Setup
 [Explain how to set up the circuit]
