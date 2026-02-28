@@ -1,47 +1,167 @@
 <p align="center">
   <img src="./img.png" alt="Project Banner" width="100%">
 </p>
+TRAFFIC CONTROL SYSTEM DESIGN INTEGRATED WIYTH ARDUINO AND SOFTWARE TO MONITOR TRAFFIC 🎯
 
-# [Project Name] 🎯
+## Basic DetaiLS
+# 🚦 Arduino Traffic Light System with Pedestrian Button
 
-## Basic Details
+## 📌 Project Overview
 
-### Team Name: [Name]
+This project demonstrates a simple **traffic light control system** using an Arduino Uno, LEDs, and a push button. It simulates real-world traffic behavior with **Red, Yellow, and Green lights**, and includes a **pedestrian button** to request crossing.
+
+---
+
+## ⚙️ Components Required
+
+* Arduino Uno
+* Breadboard
+* 3 LEDs (Red, Yellow, Green)
+* 3 Resistors (220Ω )
+* 1 Push Button
+* 1 Resistor (10kΩ for button)
+* Jumper Wires (Male-Male)
+
+---
+
+## 🔌 Circuit Connections
+
+### LEDs:
+
+* Red LED → Digital Pin 5 (via resistor)
+* Yellow LED → Digital Pin 4 (via resistor)
+* Green LED → Digital Pin 3 (via resistor)
+* All LED cathodes → GND
+
+### Push Button:
+
+* One side → Digital Pin 2
+* Other side → 5V
+* 10kΩ resistor between Pin 2 and GND (pull-down resistor)
+
+### Power:
+
+* Arduino 5V → Breadboard + rail
+* Arduino GND → Breadboard – rail
+
+---
+
+## 💡 Working Principle
+
+* Normally, the system runs a traffic sequence:
+
+  * Green ON → Yellow ON → Red ON
+* When the **push button is pressed**:
+
+  * System detects HIGH signal
+  * Switches to Red light
+  * Allows pedestrian crossing
+
+---
+
+## 🧠 Logic Flow
+
+1. Start with Green LED ON
+2. Wait for a fixed time
+3. Switch to Yellow LED
+4. Then switch to Red LED
+5. Check if button is pressed:
+
+   * If YES → Keep Red ON longer
+   * If NO → Continue normal cycle
+
+---
+
+## 🖥️ Code Features
+
+* Uses `pinMode()` for setup
+* Uses `digitalRead()` for button input
+* Uses `digitalWrite()` for LED control
+* Includes delays for timing
+
+---
+
+
+## 📷 Project Output
+
+The system visually shows traffic light changes and responds to button press for pedestrian crossing.
+
+---PART 2[SAFE NAVIGATION TRACKER]
+# 🚶‍♀️ SafeWalk – Pedestrian Safety Navigation App
+
+SafeWalk is a web-based application designed to help pedestrians find the **safest walking routes** instead of just the shortest ones. The system uses map data to guide users through **footpaths, zebra crossings, and low-traffic areas**.
+
+---
+
+## 📌 Features
+
+- 📍 Enter Start and Destination locations  
+- 🗺️ Displays walking route on map  
+- 🚶 Uses **walking mode navigation**  
+- ⚠️ Basic safety-based route suggestion  
+- 🔄 Real-time route display  
+- 🧭 Simple and user-friendly interface  
+
+---
+
+## 🧠 Project Idea
+
+Unlike regular navigation systems, SafeWalk focuses on:
+- Pedestrian safety  
+- Avoiding high traffic areas  
+- Encouraging use of footpaths and crossings  
+
+Future improvements can include:
+- Traffic density analysis  
+- Safety score calculation  
+- Zebra crossing detection  
+- Smart traffic signal integration  
+
+---
+
+## 🛠️ Technologies Used
+
+- HTML  
+- CSS  
+- JavaScript  
+- Google Maps JavaScript API  
+- VS Code  
+
+---
+
+### Team Name: HYPER HACK
 
 ### Team Members
-- Member 1: [Name] - [College]
-- Member 2: [Name] - [College]
+- Member 1: MALAVIKA M - College of engineering, Trivandrum
+
 
 ### Hosted Project Link
 [mention your project hosted link here]
 
 ### Project Description
-[2-3 lines about what your project does]
+The basic idea of my project was to design a traffic controller smart system integrated with an app to collect response from people , allows to navigate saferoads and threby regulating traffic.
 
 ### The Problem statement
-[What problem are you solving?]
+The problem is to design and develop a pedestrian-friendly navigation system that not only provides safe route guidance but also has the capability to analyze pedestrian density and assist in regulating traffic signals in high-demand areas, ensuring improved safety and efficiency for pedestrians. The pushbutton can be regiulated in such a way that it collects responses from app .
 
 ### The Solution
-[How are you solving it?]
-
----
+First step was to brainstorm the ideas,followed by creating a flowchart and a rough schematic cuircuit diagram.The stimulation was first done in tinkercad and then was implemented on hardware componemts,parallely 
+an app was bulid to improvise solution.
 
 ## Technical Details
+Uses **Google Maps API** with JavaScript to compute walking routes and display them on an interactive map interface.
+Implements basic **safety logic and traffic analysis** to prioritize pedestrian-friendly paths and can integrate with smart traffic systems for signal control.
+
 
 ### Technologies/Components Used
 
 **For Software:**
-- Languages used: [e.g., JavaScript, Python, Java]
-- Frameworks used: [e.g., React, Django, Spring Boot]
-- Libraries used: [e.g., axios, pandas, JUnit]
-- Tools used: [e.g., VS Code, Git, Docker]
+- Languages used:  JavaScript, Python, Java,html,css,react 
+
 
 **For Hardware:**
-- Main components: [List main components]
-- Specifications: [Technical specifications]
-- Tools required: [List tools needed]
+- Main components: Breadbord,arduino uno,3led,resistors,jumper wires
 
----
 
 ## Features
 
